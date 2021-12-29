@@ -1,0 +1,14 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "wordpress",
+      "author": "ram"
+    },
+    {
+      "id": 2,
+      "name": "react",
+      "author": "shiv"
+    }
+  ]
+}
