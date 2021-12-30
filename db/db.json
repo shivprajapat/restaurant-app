@@ -2,13 +2,31 @@
   "restaurant": [
     {
       "id": 1,
-      "name": "wordpress",
-      "author": "ram"
+      "name": "Pizza Hut",
+      "address": "Noida",
+      "rating": "4.5",
+      "email": "pizzahut@test.com"
     },
     {
       "id": 2,
-      "name": "react",
-      "author": "shiv"
+      "name": "McDonald",
+      "address": "Delhi",
+      "rating": "4.0",
+      "email": "mcdonald@test.com"
+    },
+    {
+      "id": 3,
+      "name": "W B Restaurant",
+      "address": "Noida",
+      "rating": "4.0",
+      "email": "wbrestaurant@test.com"
+    },
+    {
+      "id": 4,
+      "name": "BBQ nation",
+      "address": "Gurgaon",
+      "rating": "4.0",
+      "email": "bbn@test.com"
     }
   ]
 }
