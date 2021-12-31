@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Home from "./components/Home";
 import Header from "./components/Header";
 import RestauranstList from "./components/RestauranstList";
@@ -10,17 +11,30 @@ import RestaurantUpdate from "./components/RestaurantUpdate";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/list" element={<RestauranstList />} />
-        <Route path="/create" element={<RestaurantCreate />} />
-        <Route path="/search" element={<RestaurantSearch />} />
-        <Route path="/details" element={<RestaurantDetail />} />
-        <Route path="/update" element={<RestaurantUpdate />} />
-      </Routes>
-    </BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/list">
+          <RestauranstList />
+        </Route>
+        <Route path="/create">
+          <RestaurantCreate />
+        </Route>
+        <Route path="/search">
+          <RestaurantSearch />
+        </Route>
+        <Route path="/details">
+          <RestaurantDetail />
+        </Route>
+        <Route
+          path="/update/:id"
+          render={(props) => <RestaurantUpdate {...props} />}
+        ></Route>
+      </Switch>
+    </Router>
   );
 };
 

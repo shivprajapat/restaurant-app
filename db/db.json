@@ -22,11 +22,11 @@
       "email": "wbrestaurant@test.com"
     },
     {
-      "id": 4,
-      "name": "BBQ nation",
+      "name": "BB nation",
+      "email": "bbn@test.com",
       "address": "Gurgaon",
       "rating": "4.0",
-      "email": "bbn@test.com"
+      "id": 4
     },
     {
       "id": 5,
@@ -36,11 +36,11 @@
       "email": "haldram@test.com"
     },
     {
-      "name": "shiv",
-      "email": "shiv@gmail.com",
-      "rating": "2.3",
-      "address": "jaipur",
-      "id": 6
+      "id": 6,
+      "name": "Hald Ram",
+      "address": "Gurgaon",
+      "rating": "4.5",
+      "email": "haldram@test.com"
     }
   ]
 }
