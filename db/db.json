@@ -27,6 +27,20 @@
       "address": "Gurgaon",
       "rating": "4.0",
       "email": "bbn@test.com"
+    },
+    {
+      "id": 5,
+      "name": "Hald Ram",
+      "address": "Gurgaon",
+      "rating": "4.0",
+      "email": "haldram@test.com"
+    },
+    {
+      "name": "shiv",
+      "email": "shiv@gmail.com",
+      "rating": "2.3",
+      "address": "jaipur",
+      "id": 6
     }
   ]
 }
