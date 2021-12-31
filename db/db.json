@@ -15,32 +15,46 @@
       "email": "mcdonald@test.com"
     },
     {
-      "id": 3,
       "name": "W B Restaurant",
-      "address": "Noida",
-      "rating": "4.0",
-      "email": "wbrestaurant@test.com"
+      "email": "wbr@test.com",
+      "address": "Noida , Delhi",
+      "rating": "4.3",
+      "id": 3
     },
     {
-      "name": "BB nation",
-      "email": "bbn@test.com",
+      "id": 4,
+      "name": "BBQ nation",
       "address": "Gurgaon",
-      "rating": "4.0",
-      "id": 4
+      "rating": "4.5",
+      "email": "bbdn@test.com"
     },
     {
       "id": 5,
-      "name": "Hald Ram",
-      "address": "Gurgaon",
-      "rating": "4.0",
-      "email": "haldram@test.com"
-    },
-    {
-      "id": 6,
-      "name": "Hald Ram",
+      "name": "Haldiram nation",
       "address": "Gurgaon",
       "rating": "4.5",
-      "email": "haldram@test.com"
+      "email": "haldiram@test.com"
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@test.com",
+      "address": "noida",
+      "rating": "4.7",
+      "id": 6
+    },
+    {
+      "name": "KFC",
+      "email": "kfc@test.com",
+      "address": "South Delhi",
+      "rating": "4.7",
+      "id": 7
+    },
+    {
+      "name": "sid food",
+      "email": "kfc@test.com",
+      "address": "Delhi",
+      "rating": "4.1",
+      "id": 8
     }
   ]
 }

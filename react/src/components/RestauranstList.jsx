@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Spinner, Table, Container, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaEdit } from "react-icons/fa";
+import { FaEdit, FaTrashAlt } from "react-icons/fa";
 export default class RestauranstList extends Component {
   constructor() {
     super();
@@ -10,7 +10,7 @@ export default class RestauranstList extends Component {
     };
   }
 
-  componentDidMount() {
+  getData() {
     fetch("http://localhost:3000/restaurant").then((response) => {
       response.json().then((result) => {
         // console.log(result);
@@ -19,6 +19,20 @@ export default class RestauranstList extends Component {
     });
   }
 
+  componentDidMount() {
+    this.getData();
+  }
+
+  delete(id) {
+    fetch("http://localhost:3000/restaurant/" + id, {
+      method: "DELETE",
+    }).then((result) => {
+      result.json().then((resp) => {
+        alert("Restaurant has heen Delete");
+        this.getData();
+      });
+    });
+  }
   render() {
     return (
       <section className="mt-5">
@@ -34,7 +48,7 @@ export default class RestauranstList extends Component {
                 <th>Name</th>
                 <th>Address</th>
                 <th>Rating</th>
-                <th>Email</th>
+                <th colSpan={3}>Email</th>
               </tr>
             </thead>
 
@@ -56,6 +70,14 @@ export default class RestauranstList extends Component {
                               <FaEdit size={18} />
                             </Button>
                           </Link>
+                        </td>
+                        <td>
+                          <Button
+                            variant="danger"
+                            onClick={() => this.delete(item.id)}
+                          >
+                            <FaTrashAlt size={18} />
+                          </Button>
                         </td>
                       </tr>
                     );
