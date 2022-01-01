@@ -40,6 +40,9 @@ const Header = () => {
               <Nav.Link as={Link} to="/update">
                 Update
               </Nav.Link>
+              <Nav.Link as={Link} to="/login">
+                Login
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

@@ -8,6 +8,7 @@ import RestaurantCreate from "./components/RestaurantCreate";
 import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/login" render={(props) => <Login {...props} />}></Route>
         <Route path="/list">
           <RestauranstList />
         </Route>
