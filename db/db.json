@@ -9,11 +9,11 @@
   ],
   "restaurant": [
     {
-      "id": 1,
-      "name": "Pizza Hut",
+      "name": "PizzaHut",
+      "email": "pizzahut@test.com",
       "address": "Noida",
       "rating": "4.5",
-      "email": "pizzahut@test.com"
+      "id": 1
     },
     {
       "id": 2,
@@ -49,13 +49,6 @@
       "address": "noida",
       "rating": "4.7",
       "id": 6
-    },
-    {
-      "name": "KFC",
-      "email": "kfc@test.com",
-      "address": "South Delhi",
-      "rating": "4.7",
-      "id": 7
     },
     {
       "name": "sid food",

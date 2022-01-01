@@ -56,10 +56,10 @@ export default class RestauranstList extends Component {
               {this.state.list ? (
                 <>
                   {this.state.list.map((item, index) => {
-                    const { id, name, address, rating, email } = item;
+                    const { name, address, rating, email } = item;
                     return (
                       <tr key={index}>
-                        <td>{id}</td>
+                        <td>{index + 1}</td>
                         <td>{name}</td>
                         <td>{address}</td>
                         <td>{rating}</td>

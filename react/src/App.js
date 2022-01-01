@@ -9,32 +9,21 @@ import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantDetail from "./components/RestaurantDetail";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import Login from "./components/Login";
-
+import Protected from "./components/Protected";
+import Logout from "./components/Logout";
 const App = () => {
   return (
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Route path="/logout" component={<Logout />} />
         <Route path="/login" render={(props) => <Login {...props} />}></Route>
-        <Route path="/list">
-          <RestauranstList />
-        </Route>
-        <Route path="/create">
-          <RestaurantCreate />
-        </Route>
-        <Route path="/search">
-          <RestaurantSearch />
-        </Route>
-        <Route path="/details">
-          <RestaurantDetail />
-        </Route>
-        <Route
-          path="/update/:id"
-          render={(props) => <RestaurantUpdate {...props} />}
-        ></Route>
+        <Protected exact path="/details" component={RestaurantDetail} />
+        <Protected exact path="/update/:id" component={RestaurantUpdate} />
+        <Protected exact path="/search" component={RestaurantSearch} />
+        <Protected exact path="/create" component={RestaurantCreate} />
+        <Protected exact path="/list" component={RestauranstList} />
+        <Protected exact path="/" component={Home} />
       </Switch>
     </Router>
   );

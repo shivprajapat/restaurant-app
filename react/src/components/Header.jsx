@@ -34,15 +34,22 @@ const Header = () => {
               <Nav.Link as={Link} to="/search">
                 Search
               </Nav.Link>
-              <Nav.Link as={Link} to="/details">
+              {/* <Nav.Link as={Link} to="/details">
                 Details
-              </Nav.Link>
-              <Nav.Link as={Link} to="/update">
+              </Nav.Link> */}
+              {/* <Nav.Link as={Link} to="/update">
                 Update
-              </Nav.Link>
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
+              </Nav.Link> */}
+
+              {localStorage.getItem("login") ? (
+                <Nav.Link as={Link} to="/logout">
+                  Logout
+                </Nav.Link>
+              ) : (
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              )}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
